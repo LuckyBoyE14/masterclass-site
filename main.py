@@ -49,5 +49,17 @@ def create_user(user: User):
     return user
 
 
+@app.get('/user')
+def get_user(name: str):
+    """
+    Функция возвращает объект пользователя
+
+    :name: TODO
+    :returns: TODO
+
+    """
+    return User
+
+
 if __name__ == "__main__":
     pass

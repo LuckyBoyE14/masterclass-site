@@ -4,7 +4,7 @@
 Здесь будут схемы pydantic, которые относятся к пользователю.
 """
 
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 from datetime import datetime
 
 
@@ -14,6 +14,7 @@ class User(BaseModel):
 
     pk: int
     nick: str
+    email: str
     name: str = None
     surname: str = None
     password: str
